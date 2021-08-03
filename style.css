@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Noto+Serif:wght@700&display=swap');
+
+
+*{
+    text-decoration: none;
+        
+}
+.inner_nav {
+    margin: 0 auto;
+    width: 1170px;    
+    background-color: #F2f2f2f2;
+   
+}
+.inner_nav ul{
+    margin: 0;
+    padding: 80px 0 0;
+    list-style: none;
+    text-align: right;
+    
+}
+.inner_nav ul li{
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+.inner_nav ul li:nth-child(){
+    float: left;
+}
+.inner_nav ul li:nth-child(2){
+    float: left;
+}
+.inner_nav ul li:nth-child(3){
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+}
