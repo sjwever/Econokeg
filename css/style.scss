@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Noto+Serif:wght@700&display=swap');
+
+:root {
+    --primary-color: #0D2D2D;
+    --secondary-color: #28D6D4;
+}
+body{
+    background-color: #f2f2f2;
+    margin:0;
+       
+        
+}
+.navbar{
+    padding: 3em;
+    margin-bottom: -28px;
+
+    .logo-header{
+        margin: auto 30px 30px 0;
+        cursor: pointer;
+        width: 100%;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+  
+    .primary-nav{
+        color: var(--primary-color);
+        list-style: none;
+        font-family: 'noto-serif', arial;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .secondary-nav{
+        color: var(--primary-color);
+        font-weight:bold;
+        list-style: none;
+        font-family: 'noto-serif', arial;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    .mobile-menu {        
+        width: 50px;
+        margin: auto 90px;
+        
+    }
+
+    nav{
+    display: none;
+    }
+.container{
+    display: block;
+    cursor: pointer;
+
+}
+}
+.img-slider {
+    img{
+        width: 100%;
+        margin-top:15px;
+        position: relative;
+        
+        .slide{
+            z-index:1;
+            position: absolute;
+            width: 100%;
+            clip-path: circle(0% at 0 50%);
+            
+            .active{
+            clip-path: circle(150% at 0 50%);
+            transition: 2s;
+            transition-property: clip-path;
+            }
+        }
+        
+        
+    }
+}

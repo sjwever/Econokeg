@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Noto+Serif:wght@700&display=swap");
+:root {
+  --primary-color: #0D2D2D;
+  --secondary-color: #28D6D4;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.navbar {
+  padding: 3em;
+  margin-bottom: -28px;
+}
+
+.navbar .logo-header {
+  margin: auto 30px 30px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .primary-nav {
+  color: var(--primary-color);
+  list-style: none;
+  font-family: 'noto-serif', arial;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar .secondary-nav {
+  color: var(--primary-color);
+  font-weight: bold;
+  list-style: none;
+  font-family: 'noto-serif', arial;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar .mobile-menu {
+  width: 50px;
+  margin: auto 90px;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: block;
+  cursor: pointer;
+}
+
+.img-slider img {
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+}
+
+.img-slider img .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  -webkit-clip-path: circle(0% at 0 50%);
+          clip-path: circle(0% at 0 50%);
+}
+
+.img-slider img .slide .active {
+  -webkit-clip-path: circle(150% at 0 50%);
+          clip-path: circle(150% at 0 50%);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transition-property: -webkit-clip-path;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+}
+/*# sourceMappingURL=style.css.map */
